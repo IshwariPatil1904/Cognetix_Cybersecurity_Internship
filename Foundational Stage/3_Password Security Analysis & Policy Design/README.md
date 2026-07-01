@@ -1,31 +1,63 @@
-# Password Security Analysis & Policy Design
+# Project 3: Password Security Analysis and Policy Design
 
-## Overview
-This project explores password security by analyzing a sample password dataset, evaluating password strength, and designing a practical corporate password policy.
+[![Project](https://img.shields.io/badge/Project-3-blue?style=for-the-badge)](https://img.shields.io)
+[![Language](https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python)](https://python.org)
+[![Focus](https://img.shields.io/badge/Focus-Password%20Security-darkgreen?style=for-the-badge)](https://img.shields.io)
 
-## Contents
-- Data/sample_passwords.csv
-- Notebook/Password_Analysis.ipynb
-- Generated plots and reports in the notebooks/reports folder
-- Password_Policy/Corporate Password Policy.pdf
-- Report folder with the written task documentation
-- Screenshot folder with visual evidence of the analysis steps
+## Summary
+This project analyzes password quality using Python and Jupyter, identifies risky password patterns, and proposes a practical password policy for safer credential management.
 
-## What Was Done
-- Loaded and inspected the password dataset
-- Analyzed password frequency and reuse patterns
-- Evaluated password length and strength characteristics
-- Demonstrated password hashing using bcrypt
-- Created a sample corporate password policy document
+## Objective
+- Evaluate password strength using dataset-driven analysis
+- Detect weak patterns and password reuse
+- Demonstrate secure hashing techniques
+- Build visual insights for reporting
+- Design a practical corporate password policy
 
-## Key Takeaways
-- Password strength improves when length, complexity, and variety are used together.
-- Reused passwords increase security risks.
-- Strong password policies should encourage long, unique, and complex credentials.
+## Folder Contents
+```text
+3_Password Security Analysis & Policy Design/
+|- README.md
+|- Data/
+|  |- sample_passwords.csv
+|- notebooks/
+|  |- Password_Analysis.ipynb
+|  |- reports/
+|- Password_Policy/
+|- Report/
+|- Screenshot/
+```
 
-## Tools Used
+## Analysis Workflow
+1. Loaded and validated dataset records.
+2. Explored password length and complexity trends.
+3. Checked reuse and common-pattern risk indicators.
+4. Demonstrated bcrypt hashing for secure storage.
+5. Generated plots and documented insights.
+6. Prepared policy recommendations.
+
+## Key Findings
+- Short and predictable passwords significantly reduce security strength.
+- Password reuse creates high lateral-risk potential across accounts.
+- Better security outcomes are linked to longer and more diverse passwords.
+
+## Tools and Technologies
 - Python
 - pandas
-- matplotlib/seaborn
+- matplotlib
+- seaborn
 - bcrypt
 - Jupyter Notebook
+
+## Deliverables
+- Dataset in Data folder
+- Notebook and outputs in notebooks
+- Policy artifact in Password_Policy
+- Written report in Report folder
+- Visual evidence in Screenshot folder
+
+## Security Recommendation Snapshot
+- Prefer passphrases over short complex-only passwords.
+- Enforce uniqueness across systems and services.
+- Store only hashed passwords using strong adaptive algorithms.
+- Rotate and review policy controls periodically.
